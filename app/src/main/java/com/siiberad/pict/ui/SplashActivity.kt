@@ -30,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
                     )
                 }
                 is Result.Failure -> vm.getSources()
-                Result.InProgress -> Toast.makeText(this, "Load Data", Toast.LENGTH_SHORT).show()
+                Result.InProgress -> ""
             }
         })
     }
