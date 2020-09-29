@@ -30,9 +30,9 @@ class AccountFragment : Fragment() {
     }
 
     private fun initText() {
-        txt_name.text = "Rakka Purnama (static text)"
+        txt_name.text = "Rakka Purnama"
         txt_email.text = vm.email
-        txt_phone_number.text = "089999999999 (static text"
+        txt_phone_number.text = "089999999999"
     }
 
     private fun initClick() {
