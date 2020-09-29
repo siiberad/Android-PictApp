@@ -10,9 +10,10 @@ class LoginViewModel(app: Application) : BaseViewModel(app) {
 
     fun getData(email: String) {
         val editor: SharedPreferences.Editor = s.edit()
+        editor.putString("name", "Rakka Purnomo")
         editor.putString("email", email)
+        editor.putString("gender", "Male")
         editor.apply()
     }
-
 
 }

@@ -11,7 +11,9 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(app: Application) : BaseViewModel(app) {
     val s: SharedPreferences = app.getSharedPreferences("USER", Context.MODE_PRIVATE)
+    val name = s.getString("name", DEFAULT_VALUE)
     val email = s.getString("email", DEFAULT_VALUE)
+    val gender = s.getString("gender", DEFAULT_VALUE)
 
     val sourcesItem = MutableLiveData<List<PictModel>>()
     fun fetch() {
