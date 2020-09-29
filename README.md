@@ -1,1 +1,1 @@
-# AndroidPictApp
+# Android-PictApp
