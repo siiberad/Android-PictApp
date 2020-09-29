@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.siiberad.pict.R
 import com.siiberad.pict.utils.Util
 import kotlinx.android.synthetic.main.item_slider.view.*

@@ -35,7 +35,7 @@ class AccountFragment : Fragment() {
         txt_phone_number.text = "085326667013"
     }
 
-    private fun initClick(){
+    private fun initClick() {
         btn_logout.setOnClickListener {
             vm.logout()
             LoginActivity.show(requireActivity())

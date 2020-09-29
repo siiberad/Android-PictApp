@@ -62,7 +62,7 @@ class SplashViewModel(app: Application) : BaseViewModel(app) {
         }
     }
 
-    fun doAction(result: Result){
+    fun doAction(result: Result) {
         action.value = result
     }
 }
