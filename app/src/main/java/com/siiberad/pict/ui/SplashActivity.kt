@@ -18,10 +18,10 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         vm = ViewModelProvider(this).get(SplashViewModel::class.java)
         vm.getSources()
-        initObserveViewModel()
+        observeViewModel()
     }
 
-    private fun initObserveViewModel() {
+    private fun observeViewModel() {
         vm.action.observe(this, {
             when (it) {
                 is Result.Success -> {
