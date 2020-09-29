@@ -29,9 +29,6 @@ class SlideAdapter(var context: Context, var images: List<String?>) : PagerAdapt
             context.getSystemService(AppCompatActivity.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val view = inflater.inflate(R.layout.item_slider, container, false)
         Util.loadImage(view.imgSlider, images[position])
-//        Glide.with(context)
-//            .load(images[position])
-//            .into(view.imgSlider)
         (container as ViewPager).addView(view, null)
         return view
     }

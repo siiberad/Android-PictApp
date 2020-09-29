@@ -36,10 +36,6 @@ class HomeAdapter(private val data: List<PictModel>) :
     class RvHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(pictModel: PictModel) {
             Util.loadImage(itemView.img_bg, pictModel.url?.url1)
-//            Glide.with(itemView.context)
-//                .load(pictModel.url?.url1)
-//                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-//                .into(itemView.img_bg)
             itemView.txt_desc.text = pictModel.title
         }
     }

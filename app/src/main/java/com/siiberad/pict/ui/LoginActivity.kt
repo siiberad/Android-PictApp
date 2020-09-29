@@ -53,4 +53,8 @@ class LoginActivity : AppCompatActivity() {
         }
         return ret
     }
+
+    override fun onBackPressed() {
+        finishAffinity()
+    }
 }
