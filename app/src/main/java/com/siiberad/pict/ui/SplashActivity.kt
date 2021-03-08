@@ -32,7 +32,7 @@ class SplashActivity : AppCompatActivity() {
                     if (vm.loggedIn()) MainActivity.show(this@SplashActivity) else LoginActivity.show(this@SplashActivity)
                 }
                 is Result.Failure -> vm.getSources()
-                Result.InProgress -> Toast.makeText(this, "Load Dat", Toast.LENGTH_SHORT).show()
+                Result.InProgress -> Toast.makeText(this, "Load Dataasda", Toast.LENGTH_SHORT).show()
             }
         })
     }
